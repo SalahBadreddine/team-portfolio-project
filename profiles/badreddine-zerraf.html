@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badreddine Zerraf - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ad3152a4ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./badreddine-zerraf.css" />
+    <script src="./badreddine-zerraf.js" defer></script>
+
+    <style></style>
+  </head>
+  <body>
+    <div class="animated-bg"></div>
+
+    <nav id="navbar">
+      <div class="logo">
+        <!-- <img src="../assets/Badreddine.jpg" alt="BZ Logo" style="height: 40px; width: auto; border-radius: 50%; border: 2px solid var(--accent-primary);"> -->
+      </div></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Badreddine Zerraf</h1>
+          <div class="subtitle">
+            <span id="typed-text"></span><span class="typing-cursor"></span>
+          </div>
+          <p>
+            Crafting elegant solutions through code. Passionate about building
+            scalable applications and turning complex problems into simple,
+            beautiful interfaces.
+          </p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">
+              Let's Connect <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              View Work <i class="fas fa-briefcase"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-img-wrapper">
+            <img
+              src="../assets/Badreddine.jpg"
+              alt="Profile"
+              class="profile-img"
+            />
+            <div class="floating-icons">
+              <i
+                class="fas fa-code floating-icon"
+                style="color: var(--accent-primary)"
+              ></i>
+              <i
+                class="fas fa-laptop-code floating-icon"
+                style="color: var(--accent-secondary)"
+              ></i>
+              <i
+                class="fas fa-rocket floating-icon"
+                style="color: var(--accent-tertiary)"
+              ></i>
+              <i
+                class="fas fa-lightbulb floating-icon"
+                style="color: var(--accent-primary)"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="scroll-indicator"
+        onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})"
+      >
+        <i
+          class="fas fa-chevron-down"
+          style="color: var(--accent-primary); font-size: 2rem"
+        ></i>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <p>Get to know more about who I am and what I do</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a dedicated AI and data science student with a passion for
+            uncovering insights and building intelligent solutions that make a
+            difference. My journey in tech started with curiosity and has
+            evolved into a commitment to finding clarity within complex data.
+          </p>
+          <p>
+            I thrive in collaborative environments where I can learn from others
+            while contributing my unique perspective. Whether it's building
+            predictive models with Python or developing intuitive front-ends
+            with Web technologies, I approach each project with enthusiasm and analytical
+            attention to detail.
+          </p>
+          <div class="stats">
+            <div class="stat-card">
+              <h3>4+</h3>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat-card">
+              <h3>7+</h3>
+              <p>Technologies Mastered</p>
+            </div>
+            <div class="stat-card">
+              <h3>100%</h3>
+              <p>Dedication</p>
+            </div>
+            <div class="stat-card">
+              <h3>∞</h3>
+              <p>Learning Mindset</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="code-window">
+            <div class="code-line">
+              <span class="keyword">class</span>
+              <span class="function">Developer</span>:
+            </div>
+            <div class="code-line">
+              <span class="keyword">def</span>
+              <span class="function">__init__</span>(self):
+            </div>
+            <div class="code-line">
+              self.name = <span class="string">"Badreddine Zerraf"</span>
+            </div>
+            <div class="code-line">
+              self.role =
+              <span class="string">"AI & Data Science Student"</span>
+            </div>
+            <div class="code-line">
+              self.location = <span class="string">"Algiers, DZ"</span>
+            </div>
+            <div class="code-line">
+              self.skills = [<span class="string">"Python"</span>,
+              <span class="string">"C++"</span>,
+              <span class="string">"React"</span>]
+            </div>
+            <div class="code-line">&nbsp;</div>
+            <div class="code-line">
+              <span class="keyword">def</span>
+              <span class="function">solve_problems</span>(self):
+            </div>
+            <div class="code-line">
+              <span class="keyword">return</span>
+              <span class="string">"Building solutions that matter"</span>
+            </div>
+            <div class="code-line">&nbsp;</div>
+            <div class="code-line">
+              <span class="keyword">def</span>
+              <span class="function">current_focus</span>(self):
+            </div>
+            <div class="code-line"><span class="keyword">return</span> {</div>
+            <div class="code-line">
+              <span class="string">"learning"</span>:
+              <span class="string">"Machine Learning"</span>,
+            </div>
+            <div class="code-line">
+              <span class="string">"building"</span>:
+              <span class="string">"Smart Applications"</span>,
+            </div>
+            <div class="code-line">
+              <span class="string">"goal"</span>:
+              <span class="string">"Make an impact"</span>
+            </div>
+            <div class="code-line">}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-title">
+        <h2>Technical Skills</h2>
+        <p>Technologies and tools I work with</p>
+      </div>
+      <div class="skills-container">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-cuttlefish"></i>
+            <span>C++</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <span>HTML/CSS</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-react"></i>
+            <span>React</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-node-js"></i>
+            <span>Node.js</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <span>SQL</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-cloud"></i>
+            <span>Cloud</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-flutter"></i>
+            <span>Flutter</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-infinity"></i>
+            <span>DevOps</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-git-alt"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-figma"></i>
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+        <p>Some of my recent work</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div
+            class="project-image"
+            style="background: linear-gradient(135deg, #667eea, #764ba2)"
+          ></div>
+          <div class="project-content">
+            <h3>Predicting Athlete Performance</h3>
+            <p>
+              A machine learning project analyzing athlete performance using
+              data science techniques and statistical models.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Data Science</span>
+              <span class="tag">Search Algorithms</span>
+            </div>
+            <a
+              href="https://github.com/akrambel2115/Predicting-Athlete-Performance"
+              target="_blank"
+              class="project-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div
+            class="project-image"
+            style="background: linear-gradient(135deg, #00f5ff, #7000ff)"
+          ></div>
+          <div class="project-content">
+            <h3>Unitt</h3>
+            <p>
+              A comprehensive unit conversion application supporting multiple
+              measurement types with an intuitive user interface.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Php</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <a
+              href="https://github.com/Zerraf-Badreddine/Unitt"
+              target="_blank"
+              class="project-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div
+            class="project-image"
+            style="background: linear-gradient(135deg, #00f5ff, #7000ff)"
+          ></div>
+          <div class="project-content">
+            <h3>GrabYt - YT Downloader</h3>
+            <p>
+              A powerful YouTube video and audio downloader application with a
+              clean interface for easy media downloads.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyQt5</span>
+              <span class="tag">yt-dlp</span>
+            </div>
+            <a
+              href="https://github.com/Zerraf-Badreddine/GrabYt"
+              target="_blank"
+              class="project-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">
+        <h2>Let's Connect</h2>
+        <p>Ready to collaborate? Let's build something amazing together</p>
+      </div>
+      <div class="contact-content">
+        <h3>Get In Touch</h3>
+        <p>
+          I'm always open to discussing new projects, creative ideas, or
+          opportunities to be part of your vision. Feel free to reach out!
+        </p>
+        <a href="mailto:badreddine.zerraf@ensia.edu.dz" class="btn btn-primary">
+          <i class="fas fa-envelope"></i> Send Email
+        </a>
+        <div class="social-links">
+          <a
+            href="https://github.com/Zerraf-Badreddine"
+            class="social-link"
+            target="_blank"
+            title="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/badreddine-zerraf-a274302b4/"
+            class="social-link"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2024 Badreddine Zerraf.</p>
+    </footer>
+
+    <script></script>
+  </body>
+</html>
