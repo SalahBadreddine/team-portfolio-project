@@ -264,7 +264,7 @@ body {
 }
 
 .member-image {
-    height: 280px;
+    height: 300px;
     background: linear-gradient(135deg, var(--light-gray), var(--dark-gray));
     position: relative;
     overflow: hidden;
@@ -273,7 +273,28 @@ body {
     justify-content: center;
 }
 
+.ghofrane-img {
+    height: 400px;
+    background: linear-gradient(135deg, var(--light-gray), var(--dark-gray));
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.ghofrane-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
