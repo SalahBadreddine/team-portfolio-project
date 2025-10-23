@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-/* Final interactions:
-   - subtle professional particles on hero canvas
-   - headline fade+slide, typing effect (loop), subtitle delayed fade
-   - reveal on scroll for sections
-   - mobile nav toggle
-   - project modals (open/close/ESC/focus)
-   - project card hover animations (handled in CSS)
-   - year insert
-*/
-
-document.addEventListener('DOMContentLoaded', () => {
-
-=======
 /* Updated JS: toggles 'scrolled' look on the header and keeps existing interactions */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -37,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
      keep it here. Below I re-attach the other functionality from your previous file.
   */
 
->>>>>>> develop
   /* ---------- 1) Subtle particle canvas (professional & slow) ---------- */
   const canvas = document.getElementById('hero-canvas');
   if (canvas) {
@@ -88,22 +73,13 @@ document.addEventListener('DOMContentLoaded', () => {
     draw();
   }
 
-<<<<<<< HEAD
-  /* ---------- 2) Headline & typing & staggered reveals ---------- */
-  // typing loop for the phrase line
-=======
   /* ---------- 2) Typing + reveals ---------- */
->>>>>>> develop
   const phrases = [
     "Creative Problem Solver",
     "Web Developer",
     "Engineer"
   ];
   const typedEl = document.getElementById('typed');
-<<<<<<< HEAD
-  const cursor = document.querySelector('.cursor');
-=======
->>>>>>> develop
   let pIndex = 0, cIndex = 0, forward = true;
 
   function tick(){
@@ -126,15 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     setTimeout(tick, forward ? 80 : 40);
   }
-<<<<<<< HEAD
-  // start typing after a slight delay so headline can animate first
   setTimeout(tick, 600);
 
-  /* ---------- 3) Reveal animations via IntersectionObserver ---------- */
-=======
-  setTimeout(tick, 600);
-
->>>>>>> develop
   const io = new IntersectionObserver((entries, obs) => {
     entries.forEach(en => {
       if(en.isIntersecting){
@@ -144,10 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, {threshold: 0.14, rootMargin: '0px 0px -80px 0px'});
 
-<<<<<<< HEAD
-  // list of selectors to reveal
-=======
->>>>>>> develop
   const selectors = [
     '.headline', '.typing-wrap', '.subtitle', '.hero-ctas', '.badges',
     '.profile-glow', '.section-title', '.section-lead', '.meta', '.skill', '.project-card', '.contact-form'
@@ -157,11 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     io.observe(el);
   }));
 
-<<<<<<< HEAD
-  /* ---------- 4) Mobile nav toggle ---------- */
-=======
   /* ---------- 3) Mobile nav toggle ---------- */
->>>>>>> develop
   const hamb = document.getElementById('hamburger');
   const nav = document.getElementById('nav');
   if(hamb && nav){
@@ -175,11 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
-<<<<<<< HEAD
-  /* ---------- 5) Scrollspy (highlight active nav link) ---------- */
-=======
   /* ---------- 4) Scrollspy ---------- */
->>>>>>> develop
   const links = Array.from(document.querySelectorAll('.nav-link'));
   const sections = links.map(l => document.querySelector(l.getAttribute('href')));
   function onScroll(){
@@ -191,11 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll, {passive:true});
   onScroll();
 
-<<<<<<< HEAD
-  /* ---------- 6) Modals (open/close + keyboard/esc/backdrop) ---------- */
-=======
   /* ---------- 5) Modals ---------- */
->>>>>>> develop
   const backdrop = document.getElementById('modal-backdrop');
   const openButtons = Array.from(document.querySelectorAll('.open-modal'));
   const closeButtons = Array.from(document.querySelectorAll('.modal-close'));
@@ -228,11 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
   backdrop.addEventListener('click', () => { modals.forEach(m => { if(m.classList.contains('show')) closeModal(m); }); });
   document.addEventListener('keydown', (e) => { if(e.key === 'Escape') modals.forEach(m => { if(m.classList.contains('show')) closeModal(m); }); });
 
-<<<<<<< HEAD
-  /* ---------- 7) Insert current year ---------- */
-=======
   /* ---------- 6) Insert current year ---------- */
->>>>>>> develop
   const y = document.getElementById('js-year');
   if(y) y.textContent = new Date().getFullYear();
 

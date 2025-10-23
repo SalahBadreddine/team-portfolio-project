@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-/* Final polished styling:
-   - bigger hero text + typing loop
-   - profile lifted + pulsing glow
-   - more spacing (var --space)
-   - project card hover glow + scale
-   - subtle particles canvas overlay
-*/
-
-=======
 /* Updated CSS — fixes header overlap and adds scroll offset handling */
->>>>>>> develop
 /* Fonts & root */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
 :root{
@@ -22,10 +11,7 @@
   --radius:14px;
   --max:1200px;
   --space:36px; /* increased spacing */
-<<<<<<< HEAD
-=======
   --header-height: 88px; /* header height used for scroll offsets */
->>>>>>> develop
   font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
   color-scheme: dark;
 }
@@ -39,13 +25,6 @@ body{
     radial-gradient(800px 400px at 10% 20%, rgba(125,220,255,0.02), transparent 6%),
     radial-gradient(600px 300px at 90% 80%, rgba(139,108,255,0.015), transparent 6%),
     var(--bg);
-<<<<<<< HEAD
-  color:#074474;
-  -webkit-font-smoothing:antialiased;
-  line-height:1.55;
-}
-
-=======
   color:#eaf2f8;
   -webkit-font-smoothing:antialiased;
   line-height:1.55;
@@ -57,31 +36,15 @@ body{
 */
 html { scroll-padding-top: calc(var(--header-height) + 12px); }
 
->>>>>>> develop
 /* top gradient bar */
 .top-gradient{
   position:fixed;top:0;left:0;right:0;height:6px;z-index:60;
   background:linear-gradient(90deg,var(--accent1),var(--accent2));
-<<<<<<< HEAD
-  background-size:200% 200%;animation:gradMove 9s linear infinite;opacity:0.92;filter:blur(6px);
- 
-
-=======
   background-size:200% 200%;animation:gradMove 9s linear infinite;opacity:0.92;filter:blur(6px)
->>>>>>> develop
 }
 @keyframes gradMove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 
 /* header */
-<<<<<<< HEAD
-.site-header{position:fixed;left:0;right:0;top:16px;z-index:70;padding:10px 28px;pointer-events:none;margin-top: -20px;margin-left: -15px;margin-right: -15px;}
-.header-inner{
-  pointer-events:all;width:100%;max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;
-  background:linear-gradient(300deg, #000000, #0b4b7b);
-  border-radius:12px;padding:12px 18px;border:1px solid rgba(255,255,255,0.03);
-  box-shadow:0 12px 34px rgba(2,6,23,0.6);
-  
-=======
 .site-header{
   position:fixed;
   left:0; right:0;
@@ -110,7 +73,6 @@ html { scroll-padding-top: calc(var(--header-height) + 12px); }
 .header-inner.scrolled {
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   box-shadow:0 18px 48px rgba(2,6,23,0.65);
->>>>>>> develop
 }
 .brand{font-weight:800;font-size:18px;color:#fff;text-decoration:none}
 .brand .dot{color:var(--accent1);margin-left:6px}
@@ -120,15 +82,11 @@ html { scroll-padding-top: calc(var(--header-height) + 12px); }
 .hamburger{display:none;border:0;background:transparent;color:#fff}
 
 /* hero */
-<<<<<<< HEAD
-.hero{min-height:86vh;display:flex;align-items:center;justify-content:center;padding:calc(var(--space) * 0.7) 20px;position:relative;overflow:hidden;margin-top: 60px;}
-=======
 .hero{
   min-height:calc(86vh + 6vh); /* give hero a bit extra so it never exactly touches next section */
   display:flex;align-items:center;justify-content:center;padding:calc(var(--space) * 0.7) 20px;position:relative;overflow:hidden;
   padding-top: calc(var(--header-height) + 28px); /* ensure hero content sits below header visually */
 }
->>>>>>> develop
 .hero-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:0.55}
 .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 420px;gap:var(--space);align-items:center;width:100%;max-width:var(--max);padding-top:18px}
 .headline{font-size:54px;line-height:1.02;margin:0;color:#fff;font-weight:800;letter-spacing:-0.6px}
@@ -159,25 +117,18 @@ html { scroll-padding-top: calc(var(--header-height) + 12px); }
 @keyframes floatSlow{0%{transform:translateY(0)}50%{transform:translateY(-10px)}100%{transform:translateY(0)}}
 .svg-blob{position:absolute;right:-10px;top:-10px;width:180px;height:180px;opacity:0.9;filter:blur(6px);transform:rotate(-10deg)}
 
-<<<<<<< HEAD
-/* sections */
-=======
 /* sections
    Add scroll-margin-top as a fallback for browsers that may not support scroll-padding-top.
 */
->>>>>>> develop
 .section{padding:calc(var(--space) * 0.9) 20px}
 .section .section-inner{max-width:var(--max);margin:0 auto}
 .section-title{font-size:20px;color:var(--accent2);margin-bottom:10px}
 .section-lead{color:var(--muted);margin-bottom:18px}
 .glass{background:var(--glass);border-radius:12px;border:1px solid rgba(255,255,255,0.03);padding:28px}
 
-<<<<<<< HEAD
-=======
 /* ensure anchors are offset from header (fallback) */
 #about,#skills,#projects,#contact{ scroll-margin-top: calc(var(--header-height) + 16px); }
 
->>>>>>> develop
 /* meta & skills */
 .meta-grid{display:flex;gap:18px;margin-top:18px;flex-wrap:wrap}
 .meta{padding:14px 18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.008));min-width:120px;text-align:center}
@@ -202,11 +153,7 @@ html { scroll-padding-top: calc(var(--header-height) + 12px); }
 /* contact */
 .contact-form{display:flex;flex-direction:column;gap:14px;max-width:760px}
 .contact-form input,.contact-form textarea{padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02);color:#eaf6f8}
-<<<<<<< HEAD
-.form-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
-=======
 .form-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
->>>>>>> develop
 
 /* footer */
 .site-footer{padding:22px 0;text-align:center;color:var(--muted);margin-top:18px}
@@ -242,14 +189,12 @@ html { scroll-padding-top: calc(var(--header-height) + 12px); }
   .project-card{min-height:220px}
   .modal{width:92%}
 }
-<<<<<<< HEAD
-=======
 
 /* ===== FOOTER ===== */
 .footer {
   background: rgba(15, 15, 30, 0.6);
   backdrop-filter: blur(10px);
-  padding: 40px 0 20px;
+  padding: 10px 0 20px;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 100px;
@@ -279,4 +224,3 @@ html { scroll-padding-top: calc(var(--header-height) + 12px); }
   color: #d1d1d1;
   letter-spacing: 0.5px;
 }
->>>>>>> develop
