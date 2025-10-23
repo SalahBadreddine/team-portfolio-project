@@ -264,45 +264,42 @@ body {
 }
 
 .member-image {
-    height: 300px;
-    background: linear-gradient(135deg, var(--light-gray), var(--dark-gray));
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 300px; 
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px 25px 0 0;
 }
-
-.ghofrane-img {
-    height: 400px;
-    background: linear-gradient(135deg, var(--light-gray), var(--dark-gray));
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 .member-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       
+  object-position: center; 
+}
+
+.ghofrane-image {
+  width: 100%;
+  height: 300px; 
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px 25px 0 0;
+}
+
+.ghofrane-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top; 
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
 }
 
-.ghofrane-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
 
 .member-avatar {
     width: 150px;
